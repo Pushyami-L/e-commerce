@@ -1,0 +1,98 @@
+/* Home.module.css */
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+}
+
+.actions {
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.addButton {
+    background: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.addButton:hover {
+    background: #218838;
+}
+
+.productList {
+    list-style: none;
+    padding: 0;
+}
+
+.productItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: #f8f9fa;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.productInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.productName {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.productPrice {
+    color: #e63946;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.editButton {
+    background: #ffc107;
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.editButton:hover {
+    background: #e0a800;
+}
+
+.deleteButton {
+    background: #dc3545;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.deleteButton:hover {
+    background: #c82333;
+}

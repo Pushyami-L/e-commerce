@@ -1,0 +1,247 @@
+/* Global Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fbe8e4; /* Soft Blush */
+    color: #2b2b2b; /* Dark Gray */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3d3a3a; /* Deep Charcoal */
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Buttons */
+.cart-button {
+    background-color: #b76e79; /* Rose Gold */
+    color: white;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.add-button{
+    background-color: #b76e79; /* Rose Gold */
+    color: white;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+.add-button:hover, .cart-button:hover {
+    background-color: #a64d5d; /* Deeper Rose */
+}
+
+.nav-button {
+    background-color: #8c5f66; /* Muted Rose */
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-right: 40px;
+}
+
+.nav-button:hover {
+    background-color: #a64d5d; /* Darker Rose */
+}
+
+/* Product Grid */
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+    padding: 120px 20px 60px 20px;
+}
+
+/* Product Card */
+.product-card {
+    background: #ffedea; /* Light Rose */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(220, 163, 163, 0.5); /* Rose Gold Shadow */
+    text-align: center;
+}
+
+/* Buttons */
+.edit-button, .delete-button, .cart-add-button {
+    padding: 6px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 3px;
+}
+
+.edit-button { background-color: #b76e79; color: white; } /* Rose Gold */
+.delete-button { background-color: #d9534f; color: white; } /* Soft Red */
+.cart-add-button { background-color: #f7c5cc; color: black; } /* Blush Pink */
+
+.edit-button:hover { background-color: #a64d5d; }
+.delete-button:hover { background-color: #c9302c; }
+.cart-add-button:hover { background-color: #f4aeb6; }
+
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #3d3a3a; /* Deep Charcoal */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Add & Edit Page Styling */
+.add-container, .edit-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.add-title, .edit-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #b76e79; /* Rose Gold */
+    margin-bottom: 20px;
+}
+
+.add-form, .edit-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-field {
+    width: 300px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #dca3a3; /* Muted Rose Gold */
+    border-radius: 5px;
+    text-align: center;
+    background: #ffedea; /* Light Rose */
+}
+
+.save-button {
+    background-color: #b76e79; /* Rose Gold */
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.save-button:hover {
+    background-color: #a64d5d; /* Deeper Rose */
+}
+
+.back-button {
+    background-color: #8c5f66;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.back-button:hover {
+    background-color: #a64d5d;
+}
+
+/* Cart Page */
+.cart-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 80px 20px 20px;
+    background: #fbe8e4; /* Soft Blush */
+}
+
+.empty-cart {
+    text-align: center;
+    margin-top: 120px;
+    font-size: 18px;
+    color: #a64d5d; /* Deeper Rose */
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    background: #ffedea;
+    padding: 10px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(220, 163, 163, 0.5); /* Rose Gold Shadow */
+}
+
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+}
+
+.auth-form input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.auth-form button {
+    background-color: #b76e79;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.auth-form button:hover {
+    background-color: #a64d5d;
+}
+
